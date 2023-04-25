@@ -29,7 +29,9 @@
             >Web<span class="logo-header-blue-black">Studio</span></a
           >
           <ul class="menu list">
-            <li><a href="index.html" class="link-nav link">Studio</a></li>
+            <li>
+              <a href="index.html" class="link-nav link current">Studio</a>
+            </li>
             <li>
               <a href="./portfolio.html" class="link-nav link">Portfolio</a>
             </li>
@@ -60,7 +62,9 @@
           <h1 class="section-hero-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button-banner">Order Service</button>
+          <button type="button" class="button-banner" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="section-company">
@@ -403,5 +407,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
